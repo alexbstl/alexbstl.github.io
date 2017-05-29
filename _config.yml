@@ -28,7 +28,7 @@ github_username:  alexbstl
 markdown: kramdown
 sass:
   sass_dir: _sass
-include: ['pages']
+include: ['_pages']
 kramdown:
   input: GFM
 # theme: minima
