@@ -4,16 +4,16 @@ body { margin: 0; color: #262626; font-family: "Open Sans", sans-serif; font-siz
 
 h1, h2, h3 { font-weight: 600; color: #425469; font-family: "Muli", sans-serif; line-height: 1.5; }
 
-h1 { color: #19CCAA; font-size: 2.5em; }
-h1 a, h1 a:visited { text-decoration: none; color: #19CCAA; }
+h1 { color: #eeeeee; font-size: 2.5em; }
+h1 a, h1 a:visited { text-decoration: none; color: #eeeeee; }
 
 h2 { font-size: 2em; }
 
 a, a:visited { color: #425469; text-decoration: underline; font-weight: bold; }
 
-a:hover { color: #19CCAA; text-decoration: underline; }
+a:hover { color: #eeeeee; text-decoration: underline; }
 
-header { background: #1D1425; padding: 0px 15px; text-align: center; margin: 50px 0 0; height: 50vh; display: flex; justify-content: center; align-items: center; }
+header { background: #1D1425; padding: 0px 15px; text-align: center; margin: 50px 0 0; height: 20vh; display: flex; justify-content: center; align-items: center; }
 
 main { padding: 0 15px; max-width: 800px; margin: 0 auto; }
 
@@ -27,7 +27,7 @@ aside nav { float: left; max-width: 800px; margin: 0 auto; }
 aside nav ul { margin: 0; padding: 0; list-style: none; }
 aside nav ul li { float: left; position: relative; }
 aside nav ul li a { text-decoration: none; display: block; padding: 15px; font-family: 'Muli', sans-serif; line-height: 20px; margin-bottom: -1px; box-shadow: 0; }
-aside nav ul li a:hover, aside nav ul li a:active { background: #1D1425; text-decoration: none; color: #19CCAA; }
+aside nav ul li a:hover, aside nav ul li a:active { background: #1D1425; text-decoration: none; color: #eeeeee; }
 aside nav:after { content: ''; display: table; clear: both; }
 
 footer { text-align: center; padding: 40px; }
