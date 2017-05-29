@@ -109,3 +109,24 @@ footer {
 	text-align: center;
 	padding: 40px;
 }
+img {
+    height: auto;
+    max-width: 100%;
+    width: auto\9;
+}
+#wrap {
+   width:600px;
+   margin:0 auto;
+}
+#left_col {
+   float:left;
+   width:300px;
+}
+#right_col {
+   float:right;
+   width:300px;
+}
+#wrap ul li{
+	// display: inline;
+	padding-left: 5px
+}

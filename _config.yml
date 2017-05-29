@@ -21,6 +21,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://alexbstl.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: alexbstl1
 github_username:  alexbstl
+facebook_username: alexbstl
+linkedin_username: alexbstl
 
 # Build settings
 markdown: kramdown
@@ -35,3 +37,4 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - backups
