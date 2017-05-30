@@ -29,12 +29,5 @@ Alternatively, reach me at any of the following:
     </a>
   </li>
 {% endif %}
-{% if site.facebook_username %}
-  <li>
-    <a href="https://www.facebook.com/{{ site.facebook_username }}">Facebook
-      <i class="fa fa-facebook"></i>
-    </a>
-  </li>
-{% endif %}
 </ul>
 </div>
