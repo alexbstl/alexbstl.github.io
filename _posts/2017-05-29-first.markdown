@@ -3,7 +3,7 @@ layout: post
 title:  "First Post!"
 date:   2017-05-29
 author: Alex
-categories: General
+categories: "General"
 ---
 
 Welcome to my site!  I hope to have more posts soon, but I'm currently on vacation in Hawaii.  As such, here's a nice panorama I took of the sunset yesterday.
