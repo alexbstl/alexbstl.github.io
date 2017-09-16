@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 29 May 2017 18:02:14 -1000</pubDate>
-    <lastBuildDate>Mon, 29 May 2017 18:02:14 -1000</lastBuildDate>
+    <pubDate>Fri, 15 Sep 2017 18:52:18 -0700</pubDate>
+    <lastBuildDate>Fri, 15 Sep 2017 18:52:18 -0700</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -15,7 +15,7 @@
         <description>&lt;p&gt;Welcome to my site!  I hope to have more posts soon, but I’m currently on vacation in Hawaii.  As such, here’s a nice panorama I took of the sunset yesterday.
 &lt;img src=&quot;https://c1.staticflickr.com/5/4227/34591527950_e9fff4ce58_o.jpg&quot; alt=&quot;sunset&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 29 May 2017 00:00:00 -1000</pubDate>
+        <pubDate>Mon, 29 May 2017 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/general/2017/05/29/first.html</link>
         <guid isPermaLink="true">http://localhost:4000/general/2017/05/29/first.html</guid>
         
