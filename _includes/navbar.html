@@ -12,6 +12,10 @@
 	</div>
 </aside>
 
+{% if page.url == "/" %}
 <header>
-	<h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
+<h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
 </header>
+{% else %}
+<br/>
+{% endif %}
