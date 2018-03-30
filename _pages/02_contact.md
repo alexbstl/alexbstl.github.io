@@ -7,14 +7,6 @@ If you wish to contact me, my e-mail is: [{{site.email}}](mailto:{{site.email}})
 Alternatively, reach me at any of the following:
 <div id="wrap">
 <ul>
-{% if site.twitter_username %}
-  <li>
-    <a href="https://twitter.com/{{ site.twitter_username }}">   {{site.twitter_username}}
-      <i class="fa fa-twitter"></i>
-    </a>
-  </li>
-{% endif %}
-
 {% if site.github_username %}
   <li>
     <a href="https://github.com/{{ site.github_username }}">   {{site.github_username}}
