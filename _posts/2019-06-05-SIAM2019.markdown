@@ -6,4 +6,4 @@ author: Alex
 categories: "General"
 ---
 
-Another year, and more progress.  I recently gave a talk at SIAM 2019 about explicit(-ish) solutions to Markowitz Portfolios under factor-models with long-only constraints.  Essentially, we try to understand the structure of the solution by recasting the problem as a minimization over a norm, and solving a fixed-point as a function of the constraints and and the given factors.  The slides are available <a href=""{{site.baseurl}}/pdfs/bernstein-siam2019.pdf">here.</a>
+Another year, and more progress.  I recently gave a talk at SIAM 2019 about explicit(-ish) solutions to Markowitz Portfolios under factor-models with long-only constraints.  Essentially, we try to understand the structure of the solution by recasting the problem as a minimization over a norm, and solving a fixed-point as a function of the constraints and and the given factors.  The slides are available <a href="{{site.baseurl}}/pdfs/bernstein-siam2019.pdf">here.</a>
