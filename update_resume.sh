@@ -1,18 +1,28 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SRC="$HOME/Documents/resume/resume_current"   # absolute symlink path
-OUT="resume_current.pdf"                      # output filename
+# absolute symlink paths
+SRC_RESUME="$HOME/Documents/resume/resume_current"
+SRC_CV="$HOME/Documents/resume/cv_current"
 
-# ensure source exists
-if [[ ! -e "$SRC" ]]; then
-  echo "Error: Source '$SRC' does not exist." >&2
-  exit 1
-fi
+# output filenames
+OUT_RESUME="resume_current.pdf"
+OUT_CV="cv_current.pdf"
 
-# copy the file the symlink points to (not the symlink itself)
-# -L follows symlinks
-rsync -aL "$SRC" "./$OUT"
+copy_symlink_target () {
+    local src="$1"
+    local out="$2"
 
-echo "Copied $(readlink -f "$SRC") -> $OUT"
+    if [[ ! -e "$src" ]]; then
+        echo "Error: Source '$src' does not exist." >&2
+        return 1
+    fi
+
+    rsync -aL "$src" "./$out"
+    echo "Copied $(readlink -f "$src") -> $out"
+}
+
+# Copy both
+copy_symlink_target "$SRC_RESUME" "$OUT_RESUME"
+copy_symlink_target "$SRC_CV" "$OUT_CV"
 
