@@ -1,13 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# absolute symlink paths
-SRC_RESUME="$HOME/Documents/resume/resume_current"
-SRC_CV="$HOME/Documents/resume/cv_current"
-
-# output filenames
-OUT_RESUME="resume_current.pdf"
-OUT_CV="cv_current.pdf"
+RESUME_DIR="$HOME/Documents/resume"
 
 copy_symlink_target () {
     local src="$1"
@@ -22,7 +16,9 @@ copy_symlink_target () {
     echo "Copied $(readlink -f "$src") -> $out"
 }
 
-# Copy both
-copy_symlink_target "$SRC_RESUME" "$OUT_RESUME"
-copy_symlink_target "$SRC_CV" "$OUT_CV"
-
+# Find and copy all cv_current* and resume_current* symlinks
+for symlink in "$RESUME_DIR"/cv_current* "$RESUME_DIR"/resume_current*; do
+    [[ -L "$symlink" ]] || continue
+    base="$(basename "$symlink")"
+    copy_symlink_target "$symlink" "${base}.pdf"
+done
