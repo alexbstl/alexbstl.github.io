@@ -26,5 +26,7 @@ for symlink in "$RESUME_DIR"/cv_current* "$RESUME_DIR"/resume_current*; do
     # Require a symlink whose target actually exists (skip dangling links)
     [[ -L "$symlink" && -e "$symlink" ]] || continue
     base="$(basename "$symlink")"
+    # Skip the redundant "_current_general" duplicate ("_current" already covers it)
+    [[ "$base" == *_current_general ]] && continue
     copy_symlink_target "$symlink" "${base}.pdf"
 done
